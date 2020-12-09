@@ -12,11 +12,13 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//Category for list categories
 type Category struct {
 	Kode string `json:"kode"`
 	Name string `json:"name"`
 }
 
+//Book for list books
 type Book struct {
 	Kode     string `json:"kode"`
 	Title    string `json:"title"`
@@ -26,12 +28,14 @@ type Book struct {
 	Date     string `json:"date"`
 }
 
+//ResponseCategories for the response
 type ResponseCategories struct {
 	Status  int    `json:"status"`
 	Message string `json:"message"`
 	Data    []Category
 }
 
+//ResponseBooks for the response
 type ResponseBooks struct {
 	Status  int    `json:"status"`
 	Message string `json:"message"`
