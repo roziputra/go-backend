@@ -8,9 +8,18 @@ install mysql and create database scrap with scrap.sql
 
 # Run Scrapper
 
+install mysql driver for go
+run "go get -u github.com/go-sql-driver/mysql"
+
+install gocolly, a web scrapper library for go
+run "go get -u github.com/gocolly/colly/..."
+
 run "go run scrapper/scrapper.go" to get data from the web
 
 # Run Server
+
+install gorilla/mux a request router for go
+run "go get -u github.com/gorilla/mux"
 
 run "go run main.go" to run server
 
